@@ -42,6 +42,18 @@ console.log("The area of the square is", areaOfSquare, "sq. cm.");
 
 //Q7. Calculate the area of a triangle. Assume the length of the sides are 5cm, 6cm, 7cm.
 
+/**
+ *  sides a, b, c = 5cm, 6cm, 7cm respectively
+ */
+const sideA = 5;
+const sideB = 6;
+const sideC = 7;
+const semiPerimeter = (5 + 6 + 7) / 2;
+const triangleArea =
+  Math.sqrt(semiPerimeter * (semiPerimeter - sideA) * semiPerimeter - sideB) *
+  (semiPerimeter - sideC);
+console.log("The area of the triangle is " + triangleArea + "sq.cm");
+
 //Q8. Calculate the volume of a cube. Length of each side is 9cm.
 //volume of a cub is measured L*W*H
 const volume = 9 * 3;
